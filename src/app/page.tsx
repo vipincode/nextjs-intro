@@ -1,3 +1,4 @@
+import NewTodoForm from '@/components/new-todo-form'
 import delay from 'delay'
 
 const getData = async () => {
@@ -8,5 +9,10 @@ const getData = async () => {
 export default async function Home() {
   const data = await getData()
   // console.log(data)
-  return <div>Hello {data.data.title}</div>
+  return (
+    <div>
+      Hello {data.data.title}
+      <NewTodoForm />
+    </div>
+  )
 }

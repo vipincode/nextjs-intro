@@ -1,7 +1,16 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 
 const NewTodoForm = () => {
-  return <div>NewTodoForm</div>
+  const [state, updateState] = useState('')
+  return (
+    <div>
+      <form action="">
+        <input type="text" placeholder="Add todos" />
+      </form>
+    </div>
+  )
 }
 
 export default NewTodoForm
