@@ -6,4 +6,16 @@
   input {
     @apply border px-3 py-2 rounded-md outline-none;
   }
+  button {
+    @apply border-none px-3 py-2 rounded-md text-sm text-white bg-black;
+  }
+}
+
+@layer utilities {
+  .h1-small {
+    @apply text-lg font-bold leading-6;
+  }
+  .h1-basic {
+    @apply text-2xl font-bold leading-10;
+  }
 }

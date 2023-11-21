@@ -1,5 +1,7 @@
-const Todo = () => {
-  return <div>Todo</div>
+import { Todo } from '@prisma/client'
+
+const TodoComponent = ({ todo }: { todo: Todo }) => {
+  return <div>{todo.content}</div>
 }
 
-export default Todo
+export default TodoComponent
